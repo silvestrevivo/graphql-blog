@@ -23,4 +23,8 @@ exports.typeDefs = gql`
     joinDate: String
     favorites: [Recipe]
   }
+
+  type Mutation{
+    addRecipe(name: String!, description: String!, category: String!, instructions:String!, username: String): Recipe
+  }
 `;
