@@ -34,5 +34,7 @@ exports.typeDefs = gql`
     addRecipe(name: String!, description: String!, category: String!, instructions:String!, username: String): Recipe
 
     signupuser(username: String!, email: String!, password: String!): Token
+
+    signinuser(username: String!, password: String!): Token
   }
 `;
